@@ -1,0 +1,68 @@
+.art {
+  padding: 6.094vw 0 110px;
+
+  &__title {
+    max-width: 64.583vw;
+    width: 100%;
+    margin: 0 auto 10.677vw;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  &__text {
+    max-width: 28.125vw;
+    width: 100%;
+  }
+
+  &__text-decor {
+    text-align: right;
+    padding-right: 6.771vw;
+
+    img {
+      max-width: 28.125vw;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text-icon {
+    max-width: 20.313vw;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 5.885vw;
+      height: 5.885vw;
+      margin-bottom: 2.604vw;
+    }
+  }
+
+  &__board {
+    margin-top: 6.563vw;
+    min-width: 100vw;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.container {}
+
+.title {}
+
+.text-colored {}
+
+.main {
+
+  &__text {
+
+    &_right {}
+
+    &_full {}
+  }
+
+  &__text-inner {}
+}

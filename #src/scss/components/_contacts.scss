@@ -1,0 +1,50 @@
+.contacts {
+
+  &__adress {
+    max-width: 31.25vw;
+    width: 100%;
+    margin: 0 auto 5.99vw;
+    text-align: center;
+  }
+
+  &__adress-top {
+    margin-bottom: 2.604vw;
+
+  }
+
+  &__adress-suplabel {}
+
+  &__adress-label {
+    font-size: 1.354vw;
+  }
+
+  &__adress-bottom {}
+
+  &__adress-cord {
+    color: var(--color-grey);
+    font-size: 0.833vw;
+    margin-bottom: 24px;
+  }
+
+  &__adress-btn {}
+
+  &__map {
+    background: var(--color-grey);
+    width: 100vw;
+    height: 32.292vw;
+    margin-bottom: 9.896vw;
+  }
+
+  &__form {
+    max-width: 40.625vw;
+    border-radius: 6.77vw 6.77vw 0 0;
+  }
+}
+
+.ymaps-2-1-79-map .ymaps-2-1-79-inner-panes {
+  filter: grayscale(1);
+}
+
+// .ymaps-2-1-79-map ymaps {
+//   filter: grayscale(1);
+// }

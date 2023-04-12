@@ -1,0 +1,69 @@
+.terra {
+  padding: 0 0 6.094vw;
+
+  &__title {
+    text-align: center;
+    max-width: 49.479vw;
+    width: 100%;
+    margin: 0 auto 7.813vw;
+  }
+
+  &__content {}
+
+  &__text {
+    max-width: 23.438vw;
+    width: 100%;
+  }
+
+  &__photos {
+    position: relative;
+    margin-top: -3.854vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__photos-col {
+    display: flex;
+    position: relative;
+
+    &:first-child {
+      padding-left: 4.063vw;
+    }
+
+    &:last-child {
+      padding-top: 15.625vw;
+    }
+  }
+
+  &__photos-photo {
+
+    &_1 {
+      position: relative;
+      z-index: 2;
+      top: 10.833vw;
+    }
+
+    &_2 {
+      position: absolute;
+      top: -8.33vw;
+      right: 5.99vw;
+    }
+
+    &_3 {
+      position: relative;
+      z-index: 2;
+    }
+
+    &_4 {
+      position: absolute;
+      left: 11.354vw;
+      bottom: 13.073vw;
+    }
+
+    &_5 {
+      position: absolute;
+      top: 0;
+      right: -1.45vw;
+    }
+  }
+}

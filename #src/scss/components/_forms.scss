@@ -1,0 +1,44 @@
+.order-form {
+  padding: 123px 70px 150px 70px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid rgba(213, 208, 201, 0.675645);
+  border-radius: 102px;
+
+  &__form {}
+
+  &__title {
+    margin-bottom: 75px;
+    text-align: center;
+  }
+
+  &__inputs {
+    margin: 0 auto 40px;
+    max-width: 417px;
+    width: 100%;
+  }
+
+  &__input {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__btn {
+    min-width: 200px;
+    display: block;
+    margin: 0 auto 35px;
+  }
+
+  &__descr {
+    font-family: var(--font-text-s);
+    max-width: 478px;
+    text-align: center;
+    opacity: 0.5;
+    margin: 0 auto;
+  }
+}

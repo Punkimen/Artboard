@@ -1,0 +1,37 @@
+.hero {
+  padding: 7.813vw 0 2.604vw;
+
+  &__title {
+    text-align: center;
+    font-size: 20.365vw;
+    font-family: var(--font-text-h);
+    line-height: 0.9em;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 1.042vw;
+  }
+
+  &__title-decor {
+    position: absolute;
+    right: 6.823vw;
+    top: 58%;
+    height: fit-content;
+    max-width: 18.646vw;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text {
+    line-height: 1.2em;
+    font-weight: 400;
+    max-width: 20.313vw;
+    line-height: 1.4;
+    width: 100%;
+  }
+}
