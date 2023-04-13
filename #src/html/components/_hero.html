@@ -1,8 +1,8 @@
 <section class="hero">
 	<div class="container">
-		<h1 class="hero__title">
-			THE Birch
-			<span class="hero__title-decor">
+		<h1 class="hero__title" data-effect="fadeDown" data-duration="2">
+			<span>THE Birch</span>
+			<span class="hero__title-decor" data-speed="0.9">
 				<noscript data-webp>
 					<img src="img/decor.png" alt="декор" />
 				</noscript>
@@ -10,10 +10,18 @@
 		</h1>
 		<div class="main__text main__text_right main__text_sm">
 			<div class="main__text-inner hero__text">
-				<p>
+				<p data-effect="fadeDown" data-delay="0.8" data-duration="1.2">
 					Первая загородная площадка от лидеров event-рынка LOFT HALL.
 				</p>
-				<button class="btn hero__btn">Узнать подробности</button>
+				<button
+					class="btn hero__btn"
+					data-effect="opacity"
+					data-delay="1.2"
+					data-duration="1.4"
+					data-popup="#order_form"
+				>
+					Узнать подробности
+				</button>
 			</div>
 		</div>
 	</div>

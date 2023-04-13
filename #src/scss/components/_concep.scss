@@ -33,6 +33,8 @@
   }
 
   &__slider-slide {
+    min-width: 48.958vw;
+
     &:not(:last-child) {
       margin-right: 10px;
     }

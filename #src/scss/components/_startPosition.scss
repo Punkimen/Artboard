@@ -1,0 +1,46 @@
+[data-effect="opacity"] {
+  display: block;
+  opacity: 0;
+  will-change: transform;
+}
+
+[data-effect="fadeDown"] {
+  display: block;
+  opacity: 0;
+  transform: translateY(-30%);
+  will-change: transform;
+}
+
+[data-effect="fadeUp"] {
+  display: block;
+  opacity: 0;
+  transform: translateY(-30%);
+  will-change: transform;
+}
+
+[data-effect="fadeLeft"] {
+  display: block;
+  opacity: 0;
+  transform: translateX(-150px);
+  will-change: transform;
+}
+
+[data-effect="fadeRight"] {
+  display: block;
+  opacity: 0;
+  transform: translateX(150px);
+  will-change: transform;
+}
+
+[data-effect="fadeRightTop"] {
+  display: block;
+  opacity: 0;
+  transform: translateX(150px) translateY(-150px);
+  will-change: transform;
+}
+
+[data-effect="line"] {
+  transform: translateY(150%);
+  display: block;
+  will-change: transform;
+}

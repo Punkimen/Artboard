@@ -15,6 +15,8 @@
   }
 
   &__text-decor {
+    position: relative;
+    top: 100px;
     text-align: right;
     padding-right: 6.771vw;
 
@@ -40,13 +42,50 @@
   &__board {
     margin-top: 6.563vw;
     min-width: 100vw;
+    position: relative;
 
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
+    &-img {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
     }
   }
+
+  &__board-decor {
+    position: absolute;
+
+    &_1 {
+      max-width: 31.458vw;
+      width: 100%;
+      top: -3.54px;
+      left: 37%;
+      z-index: 2;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        ;
+      }
+    }
+
+    &_2 {
+      bottom: 12.292vw;
+      left: 42%;
+      max-width: 34.74vw;
+      width: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        ;
+      }
+    }
+  }
+
 }
 
 .container {}

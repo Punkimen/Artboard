@@ -1,6 +1,11 @@
 .header {
   font-family: var(--font-text-s);
   padding: 1.042vw 0 1.042vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 
   &__wrapper {
     display: flex;
@@ -31,7 +36,15 @@
     }
   }
 
-  &__menu {}
+  &.hide-menu {
+    .header__menu {
+      animation: hideElem 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+  }
+
+  &__menu {
+    animation: showElem 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
 
   &__menu-list {
     display: flex;
@@ -39,6 +52,8 @@
   }
 
   &__menu-elem {
+    overflow: hidden;
+
     &:not(:last-child) {
       margin-right: 2.083vw;
     }
@@ -55,12 +70,17 @@
 
   &__center {}
 
-  &__right {}
+  &__right {
+    display: flex;
+    align-items: center;
+  }
 
   &__phone {
     margin-right: 2.083vw;
     transition: all ease .3s;
     color: var(--color-main);
+    overflow: hidden;
+
 
     &:hover {
       color: var(--color-main-light);
@@ -72,7 +92,3 @@
     border-radius: 0.781vw;
   }
 }
-
-.container {}
-
-.btn {}

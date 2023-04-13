@@ -26,7 +26,9 @@
     margin-bottom: 24px;
   }
 
-  &__adress-btn {}
+  &__adress-btn {
+    margin: 0 auto;
+  }
 
   &__map {
     background: var(--color-grey);
@@ -44,7 +46,3 @@
 .ymaps-2-1-79-map .ymaps-2-1-79-inner-panes {
   filter: grayscale(1);
 }
-
-// .ymaps-2-1-79-map ymaps {
-//   filter: grayscale(1);
-// }

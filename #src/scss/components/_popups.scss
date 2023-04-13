@@ -1,0 +1,60 @@
+.popups {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 0;
+  background: rgba(#000, .4);
+  transition: all ease-in-out .3s;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  &__inner {
+    padding: 1.45vw;
+    width: 100vw;
+    height: 100vh;
+    min-width: fit-content;
+    min-height: fit-content;
+    overflow: auto;
+  }
+}
+
+.popup {
+  position: relative;
+  animation: hideElem 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  transition-delay: 0.4s;
+
+  &.show {
+    animation: showElem 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  &__close {
+    position: absolute;
+    top: 2.604vw;
+    right: 2.604vw;
+
+    svg {
+      width: 0.885vw;
+      height: 0.885vw;
+      fill: var(--color-grey);
+      transition: all ease .3s;
+    }
+
+    &:hover {
+      fill: var(--color-dark);
+    }
+  }
+}
+
+.js-close {
+  cursor: pointer;
+}

@@ -56,6 +56,11 @@
     line-height: 1.2;
     display: block;
     font-family: var(--font-text-s);
+    transition: color ease .3s;
+
+    &:hover {
+      color: var(--color-main-light);
+    }
   }
 
   &__socials {
@@ -73,8 +78,20 @@
     border-radius: 50%;
     transition: background-color ease .3s;
 
+    svg {
+      &.tg-icon {
+        width: 1.25vw;
+        height: 1.042vw;
+      }
+
+      &.wp-icon {
+        width: 1.25vw;
+        height: 1.25vw;
+      }
+    }
+
     &:hover {
-      background-color: (--colo-main);
+      background-color: var(--color-main-light);
     }
 
     &:not(:last-child) {

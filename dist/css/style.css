@@ -246,21 +246,24 @@ li {
 }
 
 .page-content {
+  position: relative;
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
+}
+
+.smooth-content {
   background-image: url(../img/bg.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top right;
-  overflow: hidden;
 }
 
-.page-content.webp {
+.smooth-content.webp {
   background-image: url(../img/bg.webp);
 }
 
-.page-content.no-webp {
+.smooth-content.no-webp {
   background-image: url(../img/bg.png);
 }
 
@@ -401,9 +404,61 @@ text::placeholder {
   color: #6B5252;
 }
 
+[data-effect=opacity] {
+  display: block;
+  opacity: 0;
+  will-change: transform;
+}
+
+[data-effect=fadeDown] {
+  display: block;
+  opacity: 0;
+  transform: translateY(-30%);
+  will-change: transform;
+}
+
+[data-effect=fadeUp] {
+  display: block;
+  opacity: 0;
+  transform: translateY(-30%);
+  will-change: transform;
+}
+
+[data-effect=fadeLeft] {
+  display: block;
+  opacity: 0;
+  transform: translateX(-150px);
+  will-change: transform;
+}
+
+[data-effect=fadeRight] {
+  display: block;
+  opacity: 0;
+  transform: translateX(150px);
+  will-change: transform;
+}
+
+[data-effect=fadeRightTop] {
+  display: block;
+  opacity: 0;
+  transform: translateX(150px) translateY(-150px);
+  will-change: transform;
+}
+
+[data-effect=line] {
+  transform: translateY(150%);
+  display: block;
+  will-change: transform;
+}
+
 .header {
   font-family: var(--font-text-s);
   padding: 1.042vw 0 1.042vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 
 .header__wrapper {
@@ -433,9 +488,21 @@ text::placeholder {
   fill: var(--color-main);
 }
 
+.header.hide-menu .header__menu {
+  animation: hideElem 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.header__menu {
+  animation: showElem 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
 .header__menu-list {
   display: flex;
   margin-right: 3.906vw;
+}
+
+.header__menu-elem {
+  overflow: hidden;
 }
 
 .header__menu-elem:not(:last-child) {
@@ -451,10 +518,16 @@ text::placeholder {
   color: var(--color-main-light);
 }
 
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
 .header__phone {
   margin-right: 2.083vw;
   transition: all ease 0.3s;
   color: var(--color-main);
+  overflow: hidden;
 }
 
 .header__phone:hover {
@@ -531,7 +604,7 @@ text::placeholder {
 
 .banner__content-decor {
   position: absolute;
-  bottom: -52%;
+  bottom: -62%;
   left: 8.75vw;
   max-width: 36.406vw;
   width: 100%;
@@ -622,11 +695,23 @@ text::placeholder {
   max-width: 42.448vw;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #C9ACAC;
   text-align: center;
   padding: 7.292vw 1.563vw 4.375vw 1.563vw;
-  border-radius: 50%;
   position: relative;
+}
+
+.decor-title__border {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #C9ACAC;
+  pointer-events: none;
 }
 
 .decor-title__title {
@@ -634,11 +719,15 @@ text::placeholder {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 2.6vw;
+  position: relative;
+  z-index: 2;
 }
 
 .decor-title__btn {
   min-width: 10vw;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .decor-title__decor {
@@ -866,6 +955,10 @@ text::placeholder {
   margin-bottom: 173px;
 }
 
+.concep__slider-slide {
+  min-width: 48.958vw;
+}
+
 .concep__slider-slide:not(:last-child) {
   margin-right: 10px;
 }
@@ -967,6 +1060,8 @@ text::placeholder {
 }
 
 .art__text-decor {
+  position: relative;
+  top: 100px;
   text-align: right;
   padding-right: 6.771vw;
 }
@@ -992,9 +1087,41 @@ text::placeholder {
 .art__board {
   margin-top: 6.563vw;
   min-width: 100vw;
+  position: relative;
 }
 
-.art__board img {
+.art__board-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.art__board-decor {
+  position: absolute;
+}
+
+.art__board-decor_1 {
+  max-width: 31.458vw;
+  width: 100%;
+  top: -3.54px;
+  left: 37%;
+  z-index: 2;
+}
+
+.art__board-decor_1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.art__board-decor_2 {
+  bottom: 12.292vw;
+  left: 42%;
+  max-width: 34.74vw;
+  width: 100%;
+}
+
+.art__board-decor_2 img {
   display: block;
   width: 100%;
   height: auto;
@@ -1019,6 +1146,10 @@ text::placeholder {
   color: var(--color-grey);
   font-size: 0.833vw;
   margin-bottom: 24px;
+}
+
+.contacts__adress-btn {
+  margin: 0 auto;
 }
 
 .contacts__map {
@@ -1090,6 +1221,11 @@ text::placeholder {
   line-height: 1.2;
   display: block;
   font-family: var(--font-text-s);
+  transition: color ease 0.3s;
+}
+
+.footer__link:hover {
+  color: var(--color-main-light);
 }
 
 .footer__socials {
@@ -1107,12 +1243,109 @@ text::placeholder {
   transition: background-color ease 0.3s;
 }
 
+.footer__socials-link svg.tg-icon {
+  width: 1.25vw;
+  height: 1.042vw;
+}
+
+.footer__socials-link svg.wp-icon {
+  width: 1.25vw;
+  height: 1.25vw;
+}
+
 .footer__socials-link:hover {
-  background-color: --colo-main;
+  background-color: var(--color-main-light);
 }
 
 .footer__socials-link:not(:last-child) {
   margin-right: 1.042vw;
+}
+
+@keyframes showElem {
+  0% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hideElem {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+}
+
+.popups {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 0.3s;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popups.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.popups__inner {
+  padding: 1.45vw;
+  width: 100vw;
+  height: 100vh;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  overflow: auto;
+}
+
+.popup {
+  position: relative;
+  animation: hideElem 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  transition-delay: 0.4s;
+}
+
+.popup.show {
+  animation: showElem 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.popup__close {
+  position: absolute;
+  top: 2.604vw;
+  right: 2.604vw;
+}
+
+.popup__close svg {
+  width: 0.885vw;
+  height: 0.885vw;
+  fill: var(--color-grey);
+  transition: all ease 0.3s;
+}
+
+.popup__close:hover {
+  fill: var(--color-dark);
+}
+
+.js-close {
+  cursor: pointer;
 }
 
 @media (max-width: 1440px) {

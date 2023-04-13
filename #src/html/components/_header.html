@@ -2,7 +2,12 @@
 	<div class="container">
 		<div class="header__wrapper">
 			<div class="header__left">
-				<a href="/" class="header__logo">
+				<a
+					href="/"
+					class="header__logo"
+					data-effect="fadeUp"
+					data-to="0"
+				>
 					<svg class="" width="60" height="60" viewBox="0 0 60 60">
 						<use xlink:href="./img/icons/icons.svg#logo"></use>
 					</svg>
@@ -10,15 +15,34 @@
 				<nav class="header__menu">
 					<ul class="header__menu-list">
 						<li class="header__menu-elem">
-							<a href="#" class="header__menu-link"
+							<a
+								href="#"
+								class="header__menu-link"
+								data-effect="line"
+								data-delay="0.3"
+								data-to="#features"
 								>Особенности</a
 							>
 						</li>
 						<li class="header__menu-elem">
-							<a href="#" class="header__menu-link">Территория</a>
+							<a
+								href="#"
+								class="header__menu-link"
+								data-effect="line"
+								data-delay="0.4"
+								data-to="#terra"
+								>Территория</a
+							>
 						</li>
 						<li class="header__menu-elem">
-							<a href="#" class="header__menu-link">О проекте</a>
+							<a
+								href="#"
+								class="header__menu-link"
+								data-effect="line"
+								data-delay="0.5"
+								data-to="#concept"
+								>О проекте</a
+							>
 						</li>
 					</ul>
 				</nav>
@@ -27,21 +51,42 @@
 				<nav class="header__menu">
 					<ul class="header__menu-list">
 						<li class="header__menu-elem">
-							<a href="#" class="header__menu-link"
+							<a
+								href="#"
+								class="header__menu-link"
+								data-effect="line"
+								data-delay="0.7"
+								data-to="#spaces"
 								>Пространства</a
 							>
 						</li>
 						<li class="header__menu-elem">
-							<a href="#" class="header__menu-link">Контакты</a>
+							<a
+								href="#"
+								class="header__menu-link"
+								data-effect="line"
+								data-delay="0.8"
+								data-to="#contacts"
+								>Контакты</a
+							>
 						</li>
 					</ul>
 				</nav>
 			</div>
 			<div class="header__right">
 				<a href="tel:+74951201905" class="header__phone">
-					+7495 120-19-05
+					<span data-effect="line" data-delay="0.9"
+						>+7495 120-19-05</span
+					>
 				</a>
-				<button class="header__btn btn">Заказать звонок</button>
+				<button
+					class="header__btn btn"
+					data-effect="opacity"
+					data-delay="1.2"
+					data-popup="#order_form"
+				>
+					Заказать звонок
+				</button>
 			</div>
 		</div>
 	</div>

@@ -66,7 +66,6 @@ body {
   line-height: 1.2;
   overflow-x: hidden;
 
-
   @media(prefers-color-scheme: light) {
     background: var(--color-white);
     color: var(--color-dark);
@@ -92,14 +91,20 @@ li {
 
 
 .page-content {
+  position: relative;
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
+
+}
+
+.smooth-wrapper {}
+
+.smooth-content {
   background-image: url(../img/bg.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top right;
-  overflow: hidden;
 
   &.webp {
     background-image: url(../img/bg.webp);

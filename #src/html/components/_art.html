@@ -1,22 +1,22 @@
 <section class="art">
 	<div class="container">
-		<h2 class="art__title title">
+		<h2 class="art__title title" data-effect="fadeDown">
 			Настоящее <span class="text-colored">искусство</span> в области
 			архитектуры и интерьера
 		</h2>
 		<div class="main__text main__text_xs main__text_right">
-			<div class="art__text-decor">
+			<div class="art__text-decor" data-effect="opacity" data-speed="0.8">
 				<noscript data-webp>
 					<img src="img/art_decor.png" alt="Декор" />
 				</noscript>
 			</div>
 			<div class="main__text-inner art__text">
-				<p>
+				<p data-effect="opacity">
 					The Birch, обладая всеми прелестями скандинавского дизайна,
 					представляет собой настоящее искусство в области архитектуры
 					и интерьера.
 				</p>
-				<p>
+				<p data-effect="opacity">
 					Расположенный в лесном массиве, он впечатляет своей
 					гармонией с природным окружением, благодаря правильной
 					геометрии пространств и большим панорамным окнам, которые
@@ -24,8 +24,12 @@
 					видами на природу.
 				</p>
 				<div class="art__text-icon main__text main__text_full">
-					<img src="img/text_icon.svg" alt="logo" />
-					<p>
+					<img
+						src="img/text_icon.svg"
+						alt="logo"
+						data-effect="fadeDown"
+					/>
+					<p data-effect="opacity">
 						Команда Placebo/25, известная своей успешной реновацией
 						завода «Арсенал» в Санкт-Петербурге (LOFT#7) и
 						готовящегося к запуску LOFT#8 в ДК «Серп и Молот» в
@@ -38,8 +42,22 @@
 		</div>
 	</div>
 	<div class="art__board">
+		<div class="art__board-decor art__board-decor_1" data-speed="0.8">
+			<noscript data-webp>
+				<img src="img/art_board_decor_1.png" alt="decor" />
+			</noscript>
+		</div>
+		<div class="art__board-decor art__board-decor_2" data-speed="1.1">
+			<noscript data-webp>
+				<img src="img/art_board_decor_2.png" alt="decor" />
+			</noscript>
+		</div>
 		<noscript data-webp>
-			<img src="img/art_board.png" alt="Стенгазета" />
+			<img
+				class="art__board-img"
+				src="img/art_board.png"
+				alt="Стенгазета"
+			/>
 		</noscript>
 	</div>
 </section>

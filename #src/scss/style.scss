@@ -1,6 +1,7 @@
 @import 'mixin';
 @import 'fonts';
 @import 'vars';
+@import './components/startPosition';
 @import './components/header';
 @import './components/hero';
 @import './components/banner';
@@ -14,3 +15,6 @@
 @import './components/art';
 @import './components/contacts';
 @import './components/footer';
+@import './components/animation';
+
+@import './components/popups';
