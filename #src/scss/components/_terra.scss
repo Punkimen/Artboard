@@ -36,34 +36,47 @@
   }
 
   &__photos-photo {
+    width: 100%;
 
     &_1 {
       position: relative;
       z-index: 2;
       top: 10.833vw;
+      max-width: 17.76vw;
+
     }
 
     &_2 {
       position: absolute;
       top: -8.33vw;
       right: 5.99vw;
+      max-width: 26.719vw;
     }
 
     &_3 {
       position: relative;
       z-index: 2;
+      max-width: 30vw;
     }
 
     &_4 {
       position: absolute;
       left: 11.354vw;
       bottom: 13.073vw;
+      max-width: 14.427vw;
     }
 
     &_5 {
+      max-width: 20.469vw;
       position: absolute;
       top: 0;
       right: -1.45vw;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   }
 }

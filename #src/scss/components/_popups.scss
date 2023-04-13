@@ -16,9 +16,14 @@
   &.show {
     pointer-events: auto;
     opacity: 1;
+
+    .popups__inner {
+      display: block;
+    }
   }
 
   &__inner {
+    // display: none;
     padding: 1.45vw;
     width: 100vw;
     height: 100vh;
@@ -30,11 +35,15 @@
 
 .popup {
   position: relative;
-  animation: hideElem 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  opacity: 0;
   transition-delay: 0.4s;
+  pointer-events: none;
+  transition-delay: .4s;
+  transition: all ease .5s;
 
   &.show {
-    animation: showElem 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    opacity: 1;
+    pointer-events: auto;
   }
 
   &__close {

@@ -23,7 +23,7 @@
   &__adress-cord {
     color: var(--color-grey);
     font-size: 0.833vw;
-    margin-bottom: 24px;
+    margin-bottom: 1.25vw;
   }
 
   &__adress-btn {
@@ -43,6 +43,10 @@
   }
 }
 
-.ymaps-2-1-79-map .ymaps-2-1-79-inner-panes {
+.ymaps-layers-pane {
   filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
 }

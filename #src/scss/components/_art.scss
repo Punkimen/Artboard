@@ -1,5 +1,5 @@
 .art {
-  padding: 6.094vw 0 110px;
+  padding: 6.094vw 0 5.729vw;
 
   &__title {
     max-width: 64.583vw;
@@ -16,7 +16,7 @@
 
   &__text-decor {
     position: relative;
-    top: 100px;
+    top: 5.208vw;
     text-align: right;
     padding-right: 6.771vw;
 
@@ -45,11 +45,11 @@
     position: relative;
 
     &-img {
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
+
+      display: block;
+      width: 100%;
+      height: auto;
+
     }
   }
 
@@ -59,7 +59,7 @@
     &_1 {
       max-width: 31.458vw;
       width: 100%;
-      top: -3.54px;
+      top: -0.184vw;
       left: 37%;
       z-index: 2;
 

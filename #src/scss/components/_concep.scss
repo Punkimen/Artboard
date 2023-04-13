@@ -1,21 +1,21 @@
 .concep {
-  padding: 32px 0 0px;
+  padding: 1.667vw 0 0;
 
   &__title {
     z-index: 2;
     position: relative;
     text-align: center;
-    max-width: 950px;
+    max-width: 49.479vw;
     width: 100%;
-    margin: 0 auto 311px;
+    margin: 0 auto 16.198vw;
   }
 
   &__title-decor {
     position: absolute;
     bottom: 0;
-    right: -286px;
+    right: -14.896vw;
     transform: translateY(69%);
-    max-width: 604px;
+    max-width: 31.458vw;
     width: 100%;
 
     img {
@@ -29,14 +29,14 @@
     display: flex;
     white-space: nowrap;
     transform: rotate(-3deg);
-    margin-bottom: 173px;
+    margin-bottom: 9vw;
   }
 
   &__slider-slide {
     min-width: 48.958vw;
 
     &:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 0.521vw;
     }
 
     img {
@@ -48,7 +48,7 @@
   }
 
   &__text {
-    max-width: 540px;
+    max-width: 28.125vw;
     line-height: 1.8;
   }
 }
