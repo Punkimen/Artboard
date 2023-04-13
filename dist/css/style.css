@@ -1180,12 +1180,20 @@ text::placeholder {
   border-radius: 6.77vw 6.77vw 0 0;
 }
 
-.ymaps-layers-pane {
+.ymaps-2-1-79-ground-pane {
   filter: grayscale(1);
   -ms-filter: grayscale(1);
   -webkit-filter: grayscale(1);
   -moz-filter: grayscale(1);
   -o-filter: grayscale(1);
+}
+
+.ymaps-2-1-79-image-with-content {
+  left: -1.25vw;
+  top: -1.25vw;
+  width: 2.656vw;
+  height: 3.802vw;
+  background-size: 2.656vw 3.802vw;
 }
 
 .footer {
