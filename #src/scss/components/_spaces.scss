@@ -127,14 +127,17 @@
 
     @media(max-width:$md4) {
       height: 32vw;
+      margin-bottom: 4.688vw;
     }
 
     @media(max-width:$md5) {
       height: 27.113vw;
+      margin-bottom: 4.401vw;
     }
 
     @media(max-width:$md6) {
       height: 48.125vw;
+      margin-bottom: 7.813vw;
     }
 
     img {

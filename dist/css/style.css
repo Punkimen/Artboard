@@ -765,6 +765,7 @@ text::placeholder {
 
 .features-item__text {
   font-size: 0.938vw;
+  font-weight: 300;
   letter-spacing: 0.06vw;
   line-height: 1.4;
 }
@@ -1439,10 +1440,6 @@ text::placeholder {
   opacity: 1;
 }
 
-.popups.show .popups__inner {
-  display: flex;
-}
-
 .popups__inner {
   padding: 1.45vw;
   width: 100vw;
@@ -1451,7 +1448,7 @@ text::placeholder {
   min-width: fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
-  overflow: auto;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -1762,6 +1759,7 @@ text::placeholder {
 
   .spaces-item__img {
     height: 32vw;
+    margin-bottom: 4.688vw;
   }
 
   .spaces-item__content {
@@ -1930,6 +1928,10 @@ text::placeholder {
     width: 100%;
     height: auto;
   }
+
+  .footer__socials-link:not(:last-child) {
+    margin-right: 1.563vw;
+  }
 }
 
 @media (max-width: 568px) {
@@ -1947,7 +1949,7 @@ text::placeholder {
   }
 
   .main__text {
-    font-size: 2.132vw;
+    font-size: 2.465vw;
   }
 
   .main__text p:not(:last-child) {
@@ -2086,6 +2088,7 @@ text::placeholder {
 
   .spaces-item__img {
     height: 27.113vw;
+    margin-bottom: 4.401vw;
   }
 
   .spaces-item__name {
@@ -2178,7 +2181,7 @@ text::placeholder {
   }
 
   .main__text {
-    font-size: 2.67vw;
+    font-size: 3.438vw;
   }
 
   .main__text p:not(:last-child) {
@@ -2320,6 +2323,7 @@ text::placeholder {
 
   .spaces-item__img {
     height: 48.125vw;
+    margin-bottom: 7.813vw;
   }
 
   .spaces-item__name {
@@ -2345,6 +2349,10 @@ text::placeholder {
 
   .footer__link {
     font-size: 5vw;
+  }
+
+  .footer__socials-link:not(:last-child) {
+    margin-right: 3.75vw;
   }
 }
 

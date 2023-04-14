@@ -17,9 +17,7 @@
     pointer-events: auto;
     opacity: 1;
 
-    .popups__inner {
-      display: flex;
-    }
+    .popups__inner {}
   }
 
   &__inner {
@@ -29,7 +27,7 @@
     height: 100vh;
     min-width: fit-content;
     min-height: fit-content;
-    overflow: auto;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
