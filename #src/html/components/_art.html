@@ -52,12 +52,13 @@
 				<img src="img/art_board_decor_2.png" alt="decor" />
 			</noscript>
 		</div>
-		<noscript data-webp>
-			<img
-				class="art__board-img"
-				src="img/art_board.png"
-				alt="Стенгазета"
-			/>
-		</noscript>
+		<div class="art__board-board">
+			<picture>
+				<source media="(min-width:568px)" srcset="/img/art_board.png" />
+				<noscript data-webp
+					><img src="/img/art_board_mob.png"
+				/></noscript>
+			</picture>
+		</div>
 	</div>
 </section>

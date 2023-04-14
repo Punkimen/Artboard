@@ -1,11 +1,24 @@
 .terra {
   padding: 0 0 6.094vw;
 
+  @media(max-width:$md4) {
+    padding-bottom: 10vw;
+  }
+
+  @media(max-width:$md5) {
+    padding-bottom: 25vw;
+  }
+
   &__title {
     text-align: center;
     max-width: 49.479vw;
     width: 100%;
     margin: 0 auto 7.813vw;
+
+    @media(max-width:$md4) {
+      margin-bottom: 13vw;
+      max-width: 100%;
+    }
   }
 
   &__content {}
@@ -13,6 +26,15 @@
   &__text {
     max-width: 23.438vw;
     width: 100%;
+
+    @media(max-width:$md4) {
+      max-width: 100%;
+      margin: 10vw 0;
+    }
+
+    @media(max-width:$md5) {
+      margin: 25vw 0;
+    }
   }
 
   &__photos {
@@ -20,18 +42,44 @@
     margin-top: -3.854vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media(max-width:$md4) {
+      display: block;
+      margin: 0;
+    }
   }
 
   &__photos-col {
     display: flex;
     position: relative;
+    min-height: 40vw;
 
-    &:first-child {
+    @media(max-width:$md4) {
+      min-height: 50vw;
+    }
+
+    &_1 {
       padding-left: 4.063vw;
+
+      @media(max-width:$md4) {
+        padding-left: 0;
+        max-width: 50vw;
+        margin: 0 auto;
+      }
+
+      @media(max-width:$md5) {
+        max-width: 100%;
+        display: block;
+      }
     }
 
     &:last-child {
       padding-top: 15.625vw;
+
+      @media(max-width:$md4) {
+        max-width: 100%;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -43,7 +91,14 @@
       z-index: 2;
       top: 10.833vw;
       max-width: 17.76vw;
+      min-width: 142px;
 
+      @media(max-width:$md5) {
+        position: absolute;
+        top: auto;
+        bottom: -12vw;
+        left: 0;
+      }
     }
 
     &_2 {
@@ -51,12 +106,27 @@
       top: -8.33vw;
       right: 5.99vw;
       max-width: 26.719vw;
+
+      @media(max-width:$md4) {
+        top: 0;
+        min-width: 211px;
+      }
+
+      @media(max-width:$md5) {
+        position: relative;
+        margin-left: auto;
+        right: 0;
+      }
     }
 
     &_3 {
       position: relative;
       z-index: 2;
-      max-width: 30vw;
+      max-width: 16vw;
+
+      @media(max-width:$md4) {
+        min-width: 184px;
+      }
     }
 
     &_4 {
@@ -64,13 +134,32 @@
       left: 11.354vw;
       bottom: 13.073vw;
       max-width: 14.427vw;
+
+      @media(max-width:$md4) {
+        min-width: 211px;
+        left: 44vw;
+      }
+
+      @media(max-width: $md5) {
+        left: 23vw;
+      }
     }
 
     &_5 {
-      max-width: 20.469vw;
+      max-width: 19.167vw;
       position: absolute;
       top: 0;
       right: -1.45vw;
+
+      @media(max-width:$md4) {
+        min-width: 211px;
+        top: 10vw;
+      }
+
+      @media(max-width:$md5) {
+        top: auto;
+        bottom: -15vw;
+      }
     }
 
     img {

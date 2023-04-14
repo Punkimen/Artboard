@@ -66,6 +66,22 @@ body {
   line-height: 1.2;
   overflow-x: hidden;
 
+  @media (max-width:$md2) {
+    font-size: 1.167vw;
+  }
+
+  @media(max-width: $md4) {
+    font-size: 1.432vw;
+  }
+
+  @media(max-width: $md5) {
+    font-size: 1.94vw;
+  }
+
+  @media(max-width: $md6) {
+    font-size: 3.438vw;
+  }
+
   @media(prefers-color-scheme: light) {
     background: var(--color-white);
     color: var(--color-dark);
@@ -157,6 +173,28 @@ li {
   border: none;
   cursor: pointer;
 
+  @media(max-width:$md3) {
+    padding: 1.613vw 1.31vw 1.613vw;
+    font-size: 1.411vw;
+    border-radius: 3.125vw;
+  }
+
+  @media(max-width:$md4) {
+    font-size: 1.823vw;
+    border-radius: 4.036vw;
+  }
+
+  @media(max-width:$md5) {
+    font-size: 2.113vw;
+    border-radius: 5.458vw;
+  }
+
+  @media(max-width:$md6) {
+    padding: 3.9vw 5vw 4.063vw;
+    font-size: 3.75vw;
+    border-radius: 9.688vw;
+  }
+
   &:hover {
     background: var(--color-main-light);
   }
@@ -176,6 +214,25 @@ li {
   grid-template-columns: 1fr 1fr;
   font-weight: 300;
 
+  @media(max-width:$md3) {
+    font-size: 1.4vw;
+
+  }
+
+  @media(max-width:$md4) {
+    font-size: 2.344vw;
+    display: block;
+    width: 100%;
+  }
+
+  @media(max-width:$md5) {
+    font-size: 2.132vw;
+  }
+
+  @media(max-width:$md6) {
+    font-size: 2.67vw;
+  }
+
   &_full {
     display: block;
   }
@@ -183,6 +240,18 @@ li {
   p {
     &:not(:last-child) {
       margin-bottom: 3.75vw;
+
+      @media(max-width:$md4) {
+        margin-bottom: 5.208vw;
+      }
+
+      @media(max-width:$md5) {
+        margin-bottom: 6.338vw;
+      }
+
+      @media(max-width:$md6) {
+        margin-bottom: 11.25vw;
+      }
     }
   }
 
@@ -193,16 +262,43 @@ li {
   }
 
   &_xs {
+    // 24px
     font-size: 1.25vw;
     line-height: 1.8;
   }
 
   &_sm {
+
     font-size: 1.354vw;
+
+    @media(max-width:$md4) {
+      font-size: 2.604vw;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 2.817vw;
+    }
+
+    @media(max-width:$md6) {
+      font-size: 5vw;
+    }
   }
 
   &_lg {
+    // 32px
     font-size: 1.667vw;
+
+    @media(max-width:$md4) {
+      font-size: 3.125vw;
+    }
+
+    @media(max-width:$md5) {
+      font-size: 3.521vw;
+    }
+
+    @media(max-width:$md6) {
+      font-size: 6.25vw;
+    }
   }
 }
 
@@ -215,11 +311,25 @@ li {
   &__arrow {
     width: 2.76vw;
     height: 2.76vw;
+
+    @media(max-width:$md4) {
+      display: none;
+    }
   }
 
   &__figure {
     width: 8.3vw;
     height: 8.3vw;
+
+    @media(max-width:$md5) {
+      width: 11.268vw;
+      height: 11.268vw;
+    }
+
+    @media(max-width:$md6) {
+      width: 20vw;
+      height: 20vw;
+    }
   }
 }
 
@@ -232,14 +342,51 @@ li {
 
 h2.title {
   font-size: 5.677vw;
+
+  @media(max-width:$md4) {
+    font-size: 10.417vw;
+  }
+
+  @media(max-width:$md5) {
+    font-size: 7.042vw;
+  }
+
+  @media(max-width:$md6) {
+    font-size: 12.5vw;
+  }
 }
 
 h3.title {
   font-size: 3.125vw;
+
+  @media(max-width:$md4) {
+    font-size: 5.208vw;
+  }
+
+  @media(max-width:$md5) {
+    font-size: 4.577vw;
+  }
+
+  @media(max-width:$md6) {
+    font-size: 8.125vw;
+  }
 }
 
 h4.title {
   font-size: 2.604vw;
+
+  @media(max-width:$md4) {
+    font-size: 5.208vw;
+  }
+
+  @media(max-width:$md5) {
+    font-size: 4.577vw;
+
+  }
+
+  @media(max-width:$md6) {
+    font-size: 8.125vw;
+  }
 }
 
 input,
@@ -257,6 +404,21 @@ text {
   outline: none;
   padding: 0.781vw 1.042vw 0.781vw;
   resize: none;
+
+  @media(max-width:$md4) {
+    font-size: 2.083vw;
+    padding: 1.563vw 2.083vw;
+  }
+
+  @media(max-width:$md5) {
+    font-size: 2.289vw;
+    padding: 2.113vw 2.817vw;
+  }
+
+  @media(max-width:$md6) {
+    font-size: 4.063vw;
+    padding: 3.75vw 5vw;
+  }
 
   &:hover {
     background: #f1dfd6;

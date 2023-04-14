@@ -7,17 +7,51 @@
   border: 1px solid rgba(213, 208, 201, 0.675645);
   border-radius: 5.313vw;
 
+  @media(max-width:$md3) {
+    max-width: 52vw;
+  }
+
+  @media(max-width:$md4) {
+    max-width: 75vw;
+  }
+
+  @media(max-width:$md5) {
+    max-width: 100%;
+  }
+
   &__form {}
 
   &__title {
     margin-bottom: 3.906vw;
     text-align: center;
+
+    @media(max-width:$md4) {
+      margin-bottom: 9.766vw;
+    }
+
+    @media(max-width:$md6) {
+      margin-bottom: 6.25vw;
+    }
   }
 
   &__inputs {
     margin: 0 auto 2.083vw;
     max-width: 21.719vw;
     width: 100%;
+
+    @media(max-width:$md3) {
+      max-width: 70%;
+      margin-bottom: 3vw;
+    }
+
+    @media(max-width:$md5) {
+      max-width: 90%;
+      margin-bottom: 4vw;
+    }
+
+    @media(max-width:$md6) {
+      margin-bottom: 6.87vw;
+    }
   }
 
   &__input {
@@ -25,6 +59,14 @@
 
     &:not(:last-child) {
       margin-bottom: 0.417vw;
+
+      @media(max-width:$md4) {
+        margin-bottom: 1.042vw;
+      }
+
+      @media(max-width:$md6) {
+        margin-bottom: 2.5vw;
+      }
     }
   }
 
@@ -32,6 +74,14 @@
     min-width: 10.417vw;
     display: block;
     margin: 0 auto 1.823vw;
+
+    @media(max-width:$md4) {
+      margin-bottom: 3.255vw;
+    }
+
+    @media(max-width:$md6) {
+      margin-bottom: 6.875vw;
+    }
   }
 
   &__descr {
@@ -40,5 +90,13 @@
     text-align: center;
     opacity: 0.5;
     margin: 0 auto;
+
+    @media(max-width:$md3) {
+      max-width: 50vw;
+    }
+
+    @media(max-width:$md4) {
+      max-width: 100%;
+    }
   }
 }

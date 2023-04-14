@@ -6,6 +6,18 @@
   padding: 7.292vw 1.563vw 4.375vw 1.563vw;
   position: relative;
 
+  @media(max-width:$md4) {
+    max-width: 78.125vw;
+    padding: 16.927vw 2vw 10.417vw 2vw;
+  }
+
+  @media(max-width:$md6) {
+    max-width: 110vw;
+    width: 110vw;
+    position: relative;
+    left: -10vw;
+  }
+
   &__border {
     display: block;
     position: absolute;
@@ -27,6 +39,11 @@
     margin-bottom: 2.6vw;
     position: relative;
     z-index: 2;
+
+    @media(max-width:$md4) {
+      max-width: 80%;
+      margin-bottom: 6.25vw;
+    }
   }
 
   &__btn {
@@ -43,6 +60,14 @@
     max-width: 22.4vw;
     width: 100%;
 
+    @media(max-width:$md4) {
+      max-width: 29.948vw;
+    }
+
+    @media(max-width:$md6) {
+      max-width: 28.125vw;
+      left: 5vw;
+    }
 
     img {
       display: block;

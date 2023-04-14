@@ -18,7 +18,7 @@
     opacity: 1;
 
     .popups__inner {
-      display: block;
+      display: flex;
     }
   }
 
@@ -30,6 +30,8 @@
     min-width: fit-content;
     min-height: fit-content;
     overflow: auto;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -56,6 +58,8 @@
       height: 0.885vw;
       fill: var(--color-grey);
       transition: all ease .3s;
+      min-width: 15px;
+      min-height: 15px;
     }
 
     &:hover {

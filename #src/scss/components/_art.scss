@@ -1,17 +1,30 @@
 .art {
   padding: 6.094vw 0 5.729vw;
 
+  @media(max-width:$md5) {
+    padding: 20vw 0 10vw;
+  }
+
   &__title {
     max-width: 64.583vw;
     width: 100%;
     margin: 0 auto 10.677vw;
     text-align: center;
     line-height: 1.1;
+
+    @media(max-width:$md4) {
+      max-width: 100%;
+      text-align: left;
+    }
   }
 
   &__text {
     max-width: 28.125vw;
     width: 100%;
+
+    @media(max-width:$md4) {
+      max-width: 100%;
+    }
   }
 
   &__text-decor {
@@ -19,6 +32,10 @@
     top: 5.208vw;
     text-align: right;
     padding-right: 6.771vw;
+
+    @media(max-width:$md4) {
+      display: none;
+    }
 
     img {
       max-width: 28.125vw;
@@ -31,7 +48,13 @@
     max-width: 20.313vw;
     width: 100%;
 
+    @media(max-width:$md4) {
+      max-width: 100%;
+    }
+
     img {
+      min-width: 57px;
+      min-height: 57px;
       display: block;
       width: 5.885vw;
       height: 5.885vw;
@@ -55,6 +78,10 @@
 
   &__board-decor {
     position: absolute;
+
+    @media(max-width:$md5) {
+      display: none;
+    }
 
     &_1 {
       max-width: 31.458vw;
@@ -86,22 +113,10 @@
     }
   }
 
-}
-
-.container {}
-
-.title {}
-
-.text-colored {}
-
-.main {
-
-  &__text {
-
-    &_right {}
-
-    &_full {}
+  &__board-board {
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
-
-  &__text-inner {}
 }

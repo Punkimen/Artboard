@@ -1,16 +1,39 @@
 .header {
   font-family: var(--font-text-s);
-  padding: 1.042vw 0 1.042vw;
+
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
 
+  @media(max-width:$md3) {
+    font-size: 1.411vw;
+  }
+
+  @media(max-width:$md4) {
+    font-size: 1.825vw;
+  }
+
+  @media(max-width:$md5) {
+    font-size: 3.169vw;
+  }
+
+  @media(max-width:$md6) {
+    font-size: 4.369vw;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    padding: 1.042vw 0 1.042vw;
+
+    @media(max-width:$md4) {
+      padding: 2.347vw 0 2.347vw;
+    }
   }
 
   &__left {
@@ -22,6 +45,21 @@
     width: 3.125vw;
     height: 3.125vw;
     margin-right: 3.646vw;
+
+    @media(max-width:$md4) {
+      width: 7.171vw;
+      height: 7.171vw;
+    }
+
+    @media(max-width:$md5) {
+      width: 9.683vw;
+      height: 9.683vw;
+    }
+
+    @media(max-width:$md6) {
+      width: 13.35vw;
+      height: 13.35vw;
+    }
 
     svg {
       width: 100%;
@@ -39,8 +77,13 @@
   &.hide-menu {
     .header__menu {
       animation: hideElem 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+      @media(max-width: $md4) {
+        animation: none;
+      }
     }
   }
+
 
   &__menu {
     animation: showElem 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -49,6 +92,20 @@
   &__menu-list {
     display: flex;
     margin-right: 3.906vw;
+
+    @media(max-width:$md4) {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 4.172vw;
+    }
+
+    @media(max-width:$md5) {
+      margin-bottom: 11.268vw;
+    }
+
+    @media(max-width:$md6) {
+      margin-bottom: 15.534vw;
+    }
   }
 
   &__menu-elem {
@@ -56,6 +113,19 @@
 
     &:not(:last-child) {
       margin-right: 2.083vw;
+
+      @media(max-width:$md4) {
+        margin-right: 0;
+        margin-bottom: 2vw;
+      }
+
+      @media(max-width:$md5) {
+        margin-bottom: 5.634vw;
+      }
+
+      @media(max-width:$md6) {
+        margin-bottom: 7.767vw;
+      }
     }
   }
 
@@ -90,5 +160,123 @@
   &__btn {
     padding: 0.2vw 1.5vw 0.365vw 1.5vw;
     border-radius: 0.781vw;
+
+    @media(max-width:$md4) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @media(max-width:$md4) {
+      display: flex;
+      margin-left: 2.608vw;
+    }
+
+  }
+
+  &__mobile {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 0;
+    overflow: auto;
+    background: var(--color-white);
+    transition-property: max-height;
+    transition: 0.9s linear;
+    // opacity: 0;
+
+    &.open {
+      opacity: 1;
+      max-height: 300vh;
+    }
+  }
+
+  &__mobile-wrapper {
+    padding-top: 13.038vw;
+    padding-bottom: 5vw;
+
+    @media(max-width:$md5) {
+      padding-top: 19.38vw;
+    }
+
+    @media(max-width:$md6) {
+      padding-top: 24.272vw;
+    }
+  }
+}
+
+
+.burger {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 0;
+  right: 0px;
+  width: 7.171vw;
+  height: 3.651vw;
+  cursor: pointer;
+  z-index: 5;
+  border: 1px solid var(--color-main);
+  border-radius: 12.516vw;
+  padding: 0.434vw 1.695vw;
+
+  @media(max-width:$md5) {
+    width: 10.659vw;
+    height: 4.93vw;
+  }
+
+  @media(max-width:$md6) {
+    width: 13.35vw;
+    height: 6.796vw;
+  }
+
+  span {
+    position: relative;
+    transition: all .3s ease 0s;
+    height: 1px;
+    border-radius: 1px;
+    width: 3.911vw;
+    background: var(--color-main);
+    display: block;
+
+    @media(max-width:$md5) {
+      width: 5.282vw;
+    }
+
+    @media(max-width:$md6) {
+      width: 7.282vw;
+    }
+
+    &:first-child {
+      top: 0;
+    }
+
+    &:last-child {
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  &.active {
+    span {
+      transform: scale(0);
+      position: absolute;
+
+      &:first-child {
+        transform: rotate(-19deg);
+        top: calc(50% - 0px);
+      }
+
+      &:last-child {
+        transform: rotate(19deg);
+        bottom: calc(50% - 1px);
+      }
+    }
   }
 }
